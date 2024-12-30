@@ -1,27 +1,33 @@
-title: RZ's Personal Site
-name: RZ
-description: Personal website and portfolio
+title: Rui Zhang
+name: Rui Zhang
+description: Software Engineer @ Pluang
 url: https://rz0718.github.io
 repository: rz0718/rz0718.github.io
 
 # Theme settings
 theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "default"
+minimal_mistakes_skin: "air"
 
 # Site settings
 locale: "en-US"
-search: true
+search: false
 
 # Site Author
 author:
-  name: "RZ"
+  name: "Rui Zhang"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "Software Developer | Tech Enthusiast"
+  bio: "Software Engineer @ Pluang"
   location: "Singapore"
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:ruizhang0718@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/rz0718"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/rui-zhang-0718"
 
 # Site Footer
 footer:
@@ -29,20 +35,12 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/rz0718"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/rui-zhang-0718"
 
 # Defaults
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
   # _pages
   - scope:
       path: "_pages"
@@ -51,12 +49,6 @@ defaults:
       layout: single
       author_profile: true
 
-# Collections
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-
 # Plugins
 plugins:
   - jekyll-paginate
@@ -64,10 +56,6 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-
-# Pagination
-paginate: 5
-paginate_path: /page:num/
 
 include:
   - _pages
