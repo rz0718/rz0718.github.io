@@ -16,18 +16,6 @@ sass:
   sass_dir: _sass
   style: compressed
 
-# Custom styles
-sass:
-  style: compressed
-  sass_dir: _sass
-  load_paths:
-    - _sass
-    - assets/css
-
-# Custom CSS
-head_scripts:
-  - /assets/css/custom.css
-
 # Site Author
 author:
   name: "Rui Zhao"
