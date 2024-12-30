@@ -1,5 +1,5 @@
 ---
-title: "Book Notes: Simply Said"
+title: "Simply Said"
 categories:
   - notes
 tags:

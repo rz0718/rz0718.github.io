@@ -1,5 +1,5 @@
 ---
-title: "Book Notes: The Making of a Manager"
+title: "The Making of a Manager"
 categories:
   - notes
 tags:
