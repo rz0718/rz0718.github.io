@@ -1,48 +1,679 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+<!-- begin _includes/seo.html --><title>Rui Zhao</title>
+<meta name="description" content="My blog">
 
-<body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Welcome to my personal website! I'm passionate about technology and development.</p>
-        </section>
+  <meta name="author" content="Rui Zhao">
+  
 
-        <section id="projects">
-            <h2>My Projects</h2>
-            <p>Here you'll find some of my recent projects.</p>
-        </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me:</p>
-            <ul>
-                <li><a href="https://github.com/rz0718" target="_blank">GitHub</a></li>
-            </ul>
-        </section>
-    </main>
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Rui Zhao">
+<meta property="og:title" content="Rui Zhao">
+<meta property="og:url" content="http://localhost:4000/">
 
-    <footer>
-        <p>&copy; 2024 Personal Website. All rights reserved.</p>
-    </footer>
-</body>
 
+  <meta property="og:description" content="My blog">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Rui Zhao",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Rui Zhao Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--home wide">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Rui Zhao
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/articles/">Articles</a>
+            </li><li class="masthead__menu-item">
+              <a href="/notes/">Notes</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blogs/">Blogs</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo.jpg" alt="Rui Zhao" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Rui Zhao</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>AI Researcher, Quant, Educator and Dad (most important)</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Singapore</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:rui91seu@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/rz0718" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/rui-zhao-ph-d-cfa-1b4288112/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="https://scholar.google.com/citations?user=u4hCFPIAAAAJ&hl=en" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i><span class="label">Google Scholar</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <div class="archive">
+    
+      <h1 id="page-title" class="page__title"></h1>
+    
+    <p>Here, I read, build, think and also record. Welcome to my playground.</p>
+
+<h2 id="recent-posts">Recent Posts</h2>
+
+<article>
+    <h3><a href="/2024/12/30/2024-09-15-simply-said.html"></a></h3>
+    <p class="post-meta">
+      <time datetime="2024-12-30T18:37:10+08:00">December 30, 2024</time>
+      
+      • <span></span>
+      
+    </p>
+    
+    <p></p>
+    
+  </article>
+
+<article>
+    <h3><a href="/blogs/2024/12/23/%E4%BD%A0%E5%A5%BD%E4%B9%90%E5%BF%83.html">你好鼓鼓</a></h3>
+    <p class="post-meta">
+      <time datetime="2024-12-23T00:00:00+08:00">December 23, 2024</time>
+      
+      • <span>blogs</span>
+      
+    </p>
+    
+    <p>hello, my baby girl</p>
+    
+  </article>
+
+<article>
+    <h3><a href="/notes/2024/10/05/making-of-manager.html">Book Notes: The Making of a Manager</a></h3>
+    <p class="post-meta">
+      <time datetime="2024-10-05T00:00:00+08:00">October 05, 2024</time>
+      
+      • <span>notes</span>
+      
+    </p>
+    
+    <p>Key insights from Julie Zhuo's practical guide to navigating the transition into management</p>
+    
+  </article>
+
+<article>
+    <h3><a href="/blogs/2024/06/01/teaching-ml.html">Reflections on Teaching Machine Learning</a></h3>
+    <p class="post-meta">
+      <time datetime="2024-06-01T00:00:00+08:00">June 01, 2024</time>
+      
+      • <span>blogs</span>
+      
+    </p>
+    
+    <p>Personal reflections and lessons learned from teaching machine learning at NUS.</p>
+    
+  </article>
+
+<article>
+    <h3><a href="/notes/2024/01/02/thinking-fast-and-slow.html">Book Notes: Thinking, Fast and Slow</a></h3>
+    <p class="post-meta">
+      <time datetime="2024-01-02T00:00:00+08:00">January 02, 2024</time>
+      
+      • <span>notes</span>
+      
+    </p>
+    
+    <p>Key insights and personal reflections from Daniel Kahneman's masterpiece on human decision making.</p>
+    
+  </article>
+
+<h2 id="contact">Contact</h2>
+
+<ul>
+  <li>Email: rui91seu@gmail.com</li>
+  <li>GitHub: <a href="https://github.com/rz0718">rz0718</a></li>
+  <li>LinkedIn: <a href="https://www.linkedin.com/in/rui-zhao-ph-d-cfa-1b4288112/">Rui Zhao</a></li>
+</ul>
+
+
+<h3 class="archive__subtitle">Recent Posts</h3>
+
+
+
+
+<div class="entries-grid">
+  
+    
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/2024/12/30/2024-09-15-simply-said.html" rel="permalink">
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2024-12-30T18:37:10+08:00">December 30, 2024</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blogs/2024/12/23/%E4%BD%A0%E5%A5%BD%E4%B9%90%E5%BF%83.html" rel="permalink">你好鼓鼓
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2024-12-23T00:00:00+08:00">December 23, 2024</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">hello, my baby girl
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/notes/2024/10/05/making-of-manager.html" rel="permalink">Book Notes: The Making of a Manager
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2024-10-05T00:00:00+08:00">October 5, 2024</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Key insights from Julie Zhuo’s practical guide to navigating the transition into management
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blogs/2024/06/01/teaching-ml.html" rel="permalink">Reflections on Teaching Machine Learning
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2024-06-01T00:00:00+08:00">June 1, 2024</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Personal reflections and lessons learned from teaching machine learning at NUS.
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/notes/2024/01/02/thinking-fast-and-slow.html" rel="permalink">Book Notes: Thinking, Fast and Slow
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2024-01-02T00:00:00+08:00">January 2, 2024</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Key insights and personal reflections from Daniel Kahneman’s masterpiece on human decision making.
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/articles/2024/01/01/machine-learning-in-trading.html" rel="permalink">Machine Learning in Quantitative Trading: A Practical Guide
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2024-01-01T00:00:00+08:00">January 1, 2024</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">A comprehensive guide on implementing machine learning models in quantitative trading strategies.
+</p>
+  </article>
+</div>
+
+  
+</div>
+
+
+
+
+  </div>
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 Rui Zhao. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
 </html>

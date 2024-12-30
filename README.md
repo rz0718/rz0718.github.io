@@ -5,10 +5,107 @@ This is my personal website built with Jekyll and the Minimal Mistakes theme. Yo
 ## Features
 
 - Clean, responsive design using Minimal Mistakes theme
-- Blog posts and portfolio showcase
+- Articles, Notes, and Blog posts
 - About page with professional information
-- Category and tag organization
-- Search functionality
+
+## Content Creation Guidelines
+
+### Using Templates
+
+The `_templates` directory contains templates for different types of content:
+
+1. **Technical Articles** (`article-template.md`):
+   - Use for: Technical tutorials, research findings, analysis
+   - File naming: `YYYY-MM-DD-article-name.md`
+   - Location: `_posts/articles/`
+   - Features:
+     - Table of contents
+     - Code blocks
+     - Technical diagrams
+     - References section
+   - Tips:
+     - Keep code snippets concise
+     - Include diagrams for complex concepts
+     - Add references for technical claims
+
+2. **Personal Blogs** (`blog-template.md`):
+   - Use for: Life reflections, travel stories, personal experiences
+   - File naming: `YYYY-MM-DD-blog-title.md`
+   - Location: `_posts/blogs/`
+   - Features:
+     - Story structure
+     - Photo galleries
+     - Personal insights
+   - Tips:
+     - Focus on personal narrative
+     - Use photos to enhance storytelling
+     - Share genuine reflections
+
+3. **Book Notes** (`book-note.md`):
+   - Use for: Book summaries, reading reflections
+   - File naming: `YYYY-MM-DD-book-title.md`
+   - Location: `_posts/notes/`
+   - Features:
+     - Book info sidebar
+     - Cover image
+     - Structured format
+   - Tips:
+     - Include book metadata
+     - Add meaningful quotes
+     - Share personal takeaways
+
+### Creating New Content
+
+1. **Choose Template**:
+   ```bash
+   cp _templates/[template-name].md _posts/[category]/YYYY-MM-DD-title.md
+   ```
+
+2. **Edit Front Matter**:
+   ```yaml
+   ---
+   title: "Your Title"
+   categories:
+     - [articles/blogs/notes]
+   tags:
+     - relevant-tag
+   excerpt: "Brief description"
+   ---
+   ```
+
+3. **Add Images**:
+   - Place in correct directory:
+     ```
+     assets/images/
+     ├── articles/
+     ├── blogs/
+     └── books/
+     ```
+   - Optimize before uploading
+   - Use meaningful names
+
+4. **Format Content**:
+   - Follow template structure
+   - Add/remove sections as needed
+   - Include relevant images
+   - Add proper citations/references
+
+### Image Usage
+
+See `_templates/image-template.md` for detailed examples of:
+```markdown
+# Basic image
+![Alt text](/path/to/image.jpg)
+
+# Image with caption
+{% include figure image_path="/path/to/image.jpg" caption="Caption text" %}
+
+# Sized image
+<img src="/path/to/image.jpg" width="300"/>
+
+# Photo gallery
+{% include gallery caption="Collection of memories" %}
+```
 
 ## Development
 

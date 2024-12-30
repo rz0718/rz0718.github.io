@@ -1,39 +1,31 @@
 ---
-layout: single
+layout: home
 author_profile: true
+entries_layout: grid
+classes: wide
 ---
 
-## About Me
+Here, I read, build, think and also record. Welcome to my playground.
 
-I am a Software Engineer at Pluang, Singapore. Prior to this, I completed my studies at Nanyang Technological University (NTU).
+## Recent Posts
 
-## Research Interests
-
-- Machine Learning
-- Deep Learning
-- Computer Vision
-- Financial Technology
-
-## News
-
-- [2023/07] Joined Pluang as a Software Engineer
-- [2023/06] Graduated from NTU
-- [2022/08] Started internship at Pluang
-
-## Selected Projects
-
-### Machine Health Monitoring System (MHMS)
-- Developed a comprehensive machine health monitoring system using deep learning
-- Implemented real-time anomaly detection and predictive maintenance
-- [GitHub](https://github.com/rz0718/MHMS_DEEPLEARNING)
-
-### Quantitative Trading Models
-- Built and backtested various quantitative trading strategies
-- Implemented machine learning models for market prediction
-- [GitHub](https://github.com/rz0718/quant_models)
+{% for post in site.posts limit:5 %}
+  <article>
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p class="post-meta">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+      {% if post.categories %}
+      • <span>{{ post.categories | join: ", " }}</span>
+      {% endif %}
+    </p>
+    {% if post.excerpt %}
+    <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+    {% endif %}
+  </article>
+{% endfor %}
 
 ## Contact
 
-- Email: ruizhang0718@gmail.com
+- Email: rui91seu@gmail.com
 - GitHub: [rz0718](https://github.com/rz0718)
-- LinkedIn: [Rui Zhang](https://www.linkedin.com/in/rui-zhang-0718) 
+- LinkedIn: [Rui Zhao](https://www.linkedin.com/in/rui-zhao-ph-d-cfa-1b4288112/) 

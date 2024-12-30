@@ -1,46 +1,49 @@
-title: Rui Zhang
-name: Rui Zhang
-description: Software Engineer @ Pluang
+# Site settings
+title: Rui Zhao
+name: Rui Zhao
+description: My blog
 url: https://rz0718.github.io
+baseurl: ""
 repository: rz0718/rz0718.github.io
 
-# Theme settings
-theme: minimal-mistakes-jekyll
+# Build settings
+markdown: kramdown
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "air"
-
-# Site settings
-locale: "en-US"
-search: false
 
 # Site Author
 author:
-  name: "Rui Zhang"
+  name: "Rui Zhao"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "Software Engineer @ Pluang"
+  bio: "AI Researcher, Quant, Educator and Dad (most important)"
   location: "Singapore"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
-      url: "mailto:ruizhang0718@gmail.com"
+      url: "mailto:rui91seu@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/rz0718"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/rui-zhang-0718"
-
-# Site Footer
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/rz0718"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/rui-zhang-0718"
+      url: "https://www.linkedin.com/in/rui-zhao-ph-d-cfa-1b4288112/"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=u4hCFPIAAAAJ&hl=en"
 
 # Defaults
 defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      show_date: true
+      read_time: true
+      share: true
+      related: true
   # _pages
   - scope:
       path: "_pages"
@@ -49,6 +52,13 @@ defaults:
       layout: single
       author_profile: true
 
+# Reading Files
+include:
+  - _pages
+  - assets
+  - assets/images
+  - assets/images/books
+
 # Plugins
 plugins:
   - jekyll-paginate
@@ -56,11 +66,12 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-remote-theme
 
-include:
-  - _pages
-
+# Exclude from processing
 exclude:
   - Gemfile
   - Gemfile.lock
-  - vendor 
+  - vendor
+  - _templates
+  - README.md 

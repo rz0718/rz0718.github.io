@@ -1,7 +1,9 @@
 main:
-  - title: "CV"
-    url: /assets/files/CV.pdf
-  - title: "Publications"
-    url: /publications/
-  - title: "Projects"
-    url: /projects/ 
+  - title: "Articles"
+    url: /articles/
+  - title: "Notes"
+    url: /notes/
+  - title: "Blogs"
+    url: /blogs/
+  - title: "About"
+    url: /about/ 

@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 
+gem "jekyll", "~> 3.9.3"
 gem "github-pages", group: :jekyll_plugins
 gem "jekyll-include-cache", group: :jekyll_plugins
-gem "minimal-mistakes-jekyll"
 
 group :jekyll_plugins do
   gem "jekyll-feed"
@@ -10,4 +10,6 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-paginate"
   gem "jekyll-gist"
-end 
+end
+
+gem "webrick", "~> 1.8" 
