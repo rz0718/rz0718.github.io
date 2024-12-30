@@ -1,29 +1,30 @@
 # Personal Website
 
-This is my personal website hosted on GitHub Pages. You can visit it at [https://rz0718.github.io](https://rz0718.github.io).
+This is my personal website built with Jekyll and the Minimal Mistakes theme. You can visit it at [https://rz0718.github.io](https://rz0718.github.io).
 
 ## Features
 
-- Responsive design
-- Clean and modern interface
-- About section
-- Projects showcase
-- Contact information
+- Clean, responsive design using Minimal Mistakes theme
+- Blog posts and portfolio showcase
+- About page with professional information
+- Category and tag organization
+- Search functionality
 
 ## Development
 
 This website is built with:
-- HTML5
-- CSS3
-- Hosted on GitHub Pages
+- Jekyll
+- Minimal Mistakes theme
+- GitHub Pages
 
-## Setup
+## Local Development
 
-1. Clone this repository
-2. Make changes to the HTML/CSS files as needed
-3. Commit and push changes to GitHub
-4. The website will automatically update through GitHub Pages
+1. Install Ruby and Bundler
+2. Clone this repository
+3. Run `bundle install`
+4. Run `bundle exec jekyll serve`
+5. Visit `http://localhost:4000`
 
-## License
+## Deployment
 
-This project is open source and available under the MIT License. 
+The site is automatically deployed through GitHub Pages when changes are pushed to the main branch. 
