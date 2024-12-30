@@ -1,0 +1,87 @@
+.page {
+    @include breakpoint($large) {
+        float: right;
+        width: calc(100% - #{$right-sidebar-width});
+        padding-right: $right-sidebar-width;
+    }
+
+    @include breakpoint($x-large) {
+        width: calc(100% - #{$right-sidebar-width-wide});
+        padding-right: $right-sidebar-width-wide;
+    }
+
+    .page__inner-wrap {
+        float: left;
+        margin-top: 1em;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        clear: both;
+
+        .page__content,
+        .page__meta,
+        .page__share {
+            position: relative;
+            float: left;
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
+            clear: both;
+        }
+    }
+}
+
+.page__title {
+    margin-top: 0;
+    line-height: 1.2;
+    font-size: $type-size-2;
+
+    &+.page__meta {
+        margin-top: -0.5em;
+    }
+}
+
+.page__content {
+    h2 {
+        padding-bottom: 0.3em;
+        border-bottom: 1px solid $border-color;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 1em 0 0.5em;
+        line-height: 1.4;
+    }
+
+    p,
+    li,
+    dl {
+        font-size: $type-size-4;
+        line-height: 1.5;
+    }
+
+    /* paragraph indents */
+    p {
+        margin: 0 0 $paragraph-margin-bottom;
+
+        /* sibling indentation */
+        @if $paragraph-indent ==true {
+            &+p {
+                text-indent: $indent-var;
+                margin-top: -($indent-var);
+            }
+        }
+    }
+
+    a:not(.btn):not(#goog-wm-sb) {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

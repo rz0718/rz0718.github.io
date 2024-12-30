@@ -11,6 +11,23 @@ markdown: kramdown
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "air"
 
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Custom styles
+sass:
+  style: compressed
+  sass_dir: _sass
+  load_paths:
+    - _sass
+    - assets/css
+
+# Custom CSS
+head_scripts:
+  - /assets/css/custom.css
+
 # Site Author
 author:
   name: "Rui Zhao"

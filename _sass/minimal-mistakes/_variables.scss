@@ -1,0 +1,35 @@
+/* system typefaces */
+$serif: Georgia, Times, serif !default;
+$sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif !default;
+$monospace: Monaco, Consolas, "Lucida Console", monospace !default;
+
+/* type scale - based on https://mariusschulz.com */
+$type-size-1: 1.25em !default; // ~20px
+$type-size-2: 1.125em !default; // ~18px
+$type-size-3: 0.875em !default; // ~14px
+$type-size-4: 0.75em !default; // ~12px
+$type-size-5: 0.6875em !default; // ~11px
+$type-size-6: 0.625em !default; // ~10px
+$type-size-7: 0.5625em !default; // ~9px
+$type-size-8: 0.5em !default; // ~8px
+
+/* headline scale */
+$h-size-1: 1.125em !default; // ~18px
+$h-size-2: 1em !default; // ~16px
+$h-size-3: 0.875em !default; // ~14px
+$h-size-4: 0.75em !default; // ~12px
+$h-size-5: 0.6875em !default; // ~11px
+$h-size-6: 0.625em !default; // ~10px
+
+/* paragraph indention */
+$paragraph-indent: false !default;
+
+/* base font size and line height */
+$doc-font-size: 12px !default;
+$paragraph-margin-bottom: 0.75em !default;
+$line-height: 1.4 !default;
+
+/* content width */
+$right-sidebar-width-narrow: 150px !default;
+$right-sidebar-width: 200px !default;
+$right-sidebar-width-wide: 250px !default;
