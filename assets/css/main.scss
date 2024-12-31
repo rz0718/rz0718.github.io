@@ -14,9 +14,11 @@
         border-radius: 0 !important;
         max-width: 150px !important;
         border: none !important;
+        padding: 0 !important;
     }
 }
 
+/* Override content styles */
 .page__content {
     font-size: 0.95em !important;
 
@@ -60,6 +62,7 @@
     }
 }
 
+/* Override archive styles */
 .archive__item-title {
     font-size: 1.1em !important;
     margin: 0.4em 0 0.2em !important;
@@ -71,6 +74,7 @@
     line-height: 1.6 !important;
 }
 
+/* Override code block styles */
 div.highlighter-rouge {
     margin: 0.8em 0 !important;
     font-size: 0.9em !important;
