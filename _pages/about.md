@@ -6,7 +6,7 @@ author_profile: true
 
 ## About Me
 
-Currently, I work in a fintech company, where I lead teams working on machine learning applications in finance and treasury.
+Currently, I work in a fintech company, where I lead teams working on machine learning applications in finance. And also I do some work related to tresaury and capital markets.
 
 ## About This Site
 
@@ -28,7 +28,7 @@ The site serves as both a personal knowledge base and a platform to share what I
 
 ## Teaching
 
-I am also passionate about education and currently serve as an Adjunct Faculty at the National University of Singapore, teaching courses in machine learning and data science.
+I am also passionate about teaching and currently delivering courses in machine learning and data science.
 
 ## Contact
 
