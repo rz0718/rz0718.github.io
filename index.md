@@ -4,7 +4,7 @@ author_profile: true
 classes: wide
 ---
 
-Here, I read, build, think and also record. Welcome to my playground.
+Here, I read, build, think and also record.
 
 ## Recent Posts
 

@@ -1,6 +1,6 @@
 # Site settings
-title: Rui Zhao
-name: Rui Zhao
+title: Blog by RZ
+name: 
 description: My blog
 url: https://rz0718.github.io
 baseurl: ""
@@ -18,7 +18,7 @@ sass:
 
 # Site Author
 author:
-  name: "Rui Zhao"
+  name: "Rui Zhao(赵锐)"
   avatar: "/assets/images/bio-photo.jpg"
   bio: "Researcher, Quant, Educator and Dad"
   location: "Singapore"

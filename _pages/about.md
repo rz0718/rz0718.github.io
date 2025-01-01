@@ -8,17 +8,9 @@ author_profile: true
 
 Currently, I work in a fintech company, where I lead teams working on machine learning applications in finance. And also I do some work related to tresaury and capital markets.
 
-## About This Site
+I am also passionate about teaching and currently delivering courses in machine learning and data science.
 
-This is my playground where I:
-- Share technical insights about AI, machine learning, and quantitative trading
-- Record my reading notes and reflections
-- Write about my thoughts and experiences
-
-The site serves as both a personal knowledge base and a platform to share what I've learned with others.
-
-## Research Interests
-
+My current research interests are:
 - Machine Learning & Deep Learning
 - Agentic AI
 - Quantitative Trading
@@ -26,14 +18,11 @@ The site serves as both a personal knowledge base and a platform to share what I
 - Financial Technology
 - Big Data Analytics
 
-## Teaching
+## About This Site
 
-I am also passionate about teaching and currently delivering courses in machine learning and data science.
+This is my playground where I:
+- Share technical insights about AI, machine learning, and quantitative trading
+- Record my reading notes and reflections
+- Write about my thoughts and experiences
 
-## Contact
-
-Feel free to reach out to me via:
-- Email: rui91seu@gmail.com
-- LinkedIn: [Rui Zhao](https://www.linkedin.com/in/rui-zhao-ph-d-cfa-1b4288112/)
-- GitHub: [rz0718](https://github.com/rz0718)
-- Google Scholar: [Publications](https://scholar.google.com/citations?user=u4hCFPIAAAAJ&hl=en) 
+The site serves as both a personal knowledge base and a platform to share what I've learned with others. Yeah, this is my own rambling corner.
