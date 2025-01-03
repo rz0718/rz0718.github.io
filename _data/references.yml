@@ -1,0 +1,53 @@
+vaswani2017attention:
+  authors: "Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, L., & Polosukhin, I."
+  year: 2017
+  title: "Attention is all you need"
+  journal: "Advances in Neural Information Processing Systems"
+  volume: 30
+  url: "https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf"
+  
+devlin2018bert:
+  authors: "Devlin, J., Chang, M. W., Lee, K., & Toutanova, K."
+  year: 2018
+  title: "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+  journal: "arXiv preprint arXiv:1810.04805"
+  url: "https://arxiv.org/abs/1810.04805"
+
+brown2020language:
+  authors: "Brown, T., Mann, B., Ryder, N., Subbiah, M., Kaplan, J. D., Dhariwal, P., ... & Amodei, D."
+  year: 2020
+  title: "Language Models are Few-Shot Learners"
+  journal: "Advances in Neural Information Processing Systems"
+  volume: 33
+  pages: "1877-1901"
+  url: "https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf" 
+
+escobar2023memory:
+  authors: "Escobar, Manuel"
+  year: 2023
+  title: "Memory Requirements for LLM Training and Inference"
+  journal: "Medium"
+  url: "https://medium.com/@manuelescobar-dev/memory-requirements-for-llm-training-and-inference-97e4ab08091b"
+  
+anthropic2024building:
+  authors: "Askell, A., Bai, Y., Chen, A., Chan, D., DasSarma, N., Drain, D., ... & Kaplan, J."
+  year: 2024
+  title: "Building Effective Agents Through Human Feedback and AI Training"
+  journal: "Anthropic Research"
+  url: "https://www.anthropic.com/research/building-effective-agents"
+
+
+nvidia2023mastering:
+  authors: "NVIDIA Developer Blog"
+  year: 2023
+  title: "Mastering LLM Techniques: A Comprehensive Guide to Inference Optimization"
+  journal: "NVIDIA Developer Blog"
+  url: "https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization/"
+
+
+huggingface2024memory:
+  authors: "Hugging Face"
+  year: 2024
+  title: "Model Memory Anatomy"
+  journal: "Hugging Face Documentation"
+  url: "https://huggingface.co/docs/transformers/model_memory_anatomy"

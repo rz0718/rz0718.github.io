@@ -1,0 +1,26 @@
+{% if include.keys %}
+<ul class="reference-list">
+    {% assign refs = include.keys | split: "," %}
+    {% for key in refs %}
+    {% assign ref = site.data.references[key] %}
+    <li id="ref-{{ key }}">
+        {{ ref.authors }} ({{ ref.year }}).
+        <span class="reference-title">{% if ref.latex_title %}{{ ref.latex_title }}{% else %}{{ ref.title }}{% endif
+            %}</span>.
+        <span class="reference-journal">{% if ref.latex_journal %}{{ ref.latex_journal }}{% else %}{{ ref.journal }}{%
+            endif %}
+            {% if ref.volume %}, {{ ref.volume }}{% endif %}
+            {% if ref.pages %}, {{ ref.pages }}{% endif %}</span>.
+        {% if ref.url %}
+        <a href="{{ ref.url }}" target="_blank">[link]</a>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+{% if include.keys %}
+<script type="text/javascript">
+    window.MathJax && window.MathJax.Hub.Queue(["Typeset", MathJax.Hub, "reference-list"]);
+</script>
+{% endif %}

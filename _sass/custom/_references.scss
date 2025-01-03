@@ -1,0 +1,49 @@
+.reference-list {
+    padding-left: 0;
+    list-style: none;
+    counter-reset: reference-counter;
+
+    li {
+        margin-bottom: 1em;
+        padding-left: 2em;
+        position: relative;
+        font-size: 0.9em;
+        line-height: 1.6;
+
+        &::before {
+            counter-increment: reference-counter;
+            content: "[" counter(reference-counter) "]";
+            position: absolute;
+            left: 0;
+            color: #666;
+        }
+    }
+}
+
+.reference-link {
+    vertical-align: super;
+    font-size: 0.8em;
+    margin: 0 0.2em;
+    color: #0366d6;
+    text-decoration: none;
+
+    &::before {
+        content: "[";
+    }
+
+    &::after {
+        content: "]";
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.reference-title {
+    font-style: italic;
+}
+
+.reference-journal {
+    font-style: normal;
+}
