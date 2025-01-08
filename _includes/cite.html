@@ -1,0 +1,3 @@
+{% assign ref = site.data.references[include.key] %}
+<a href="#ref-{{ include.key }}" class="reference-link">{{ ref.authors | split: "," | first | split: " " | last }} {{
+    ref.year }}</a>

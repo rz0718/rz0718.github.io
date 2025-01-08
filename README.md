@@ -107,6 +107,68 @@ See `_templates/image-template.md` for detailed examples of:
 {% include gallery caption="Collection of memories" %}
 ```
 
+## Citation System
+
+This blog includes a citation system that allows you to add academic-style references to your posts. Here's how to use it:
+
+### 1. Adding References
+
+Add your references to `_data/references.yml` in the following format:
+
+```yaml
+einstein1905special:
+  authors: "Einstein, A."
+  year: 1905
+  title: "On the Electrodynamics of Moving Bodies"
+  journal: "Annalen der Physik"
+  volume: 17
+  pages: "891-921"
+  url: "https://example.com/paper"
+```
+
+### 2. Using Citations in Posts
+
+To cite a reference in your text, use:
+
+```liquid
+{% include cite.html key="einstein1905special" %}
+```
+
+This will display as "[Einstein 1905]" in your text and link to the full reference at the bottom of the post.
+
+### 3. Adding Reference List
+
+At the end of your post, add the reference list:
+
+```liquid
+## References
+{% include references.html keys="einstein1905special,newton1687principia" %}
+```
+
+Multiple references should be comma-separated.
+
+### Example
+
+Here's a complete example:
+
+```markdown
+---
+title: "My Physics Article"
+---
+
+The theory of relativity {% include cite.html key="einstein1905special" %} 
+revolutionized our understanding of space and time.
+
+## References
+{% include references.html keys="einstein1905special" %}
+```
+
+The citation system will:
+- Display in-text citations as [Author Year]
+- Create clickable links to the full references
+- Automatically format the reference list
+- Support multiple citations in one post
+
 ## Development
 
 This website is built with:
@@ -124,4 +186,4 @@ This website is built with:
 
 ## Deployment
 
-The site is automatically deployed through GitHub Pages when changes are pushed to the main branch. 
+The site is automatically deployed through GitHub Pages when changes are pushed to the main branch.

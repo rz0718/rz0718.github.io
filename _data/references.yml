@@ -51,3 +51,49 @@ huggingface2024memory:
   title: "Model Memory Anatomy"
   journal: "Hugging Face Documentation"
   url: "https://huggingface.co/docs/transformers/model_memory_anatomy"
+
+huggingface2024quantization:
+  authors: "Hugging Face"
+  year: 2024
+  title: "Quantization Concept Guide"
+  journal: "Hugging Face Documentation"
+  url: "https://huggingface.co/docs/optimum/en/concept_guides/quantization"
+
+shazeer2019fast:
+  authors: "Shazeer, Noam"
+  year: 2019
+  title: "Fast transformer decoding: One write-head is all you need"
+  journal: "arXiv preprint arXiv:1911.02150"
+  url: "https://arxiv.org/abs/1911.02150"
+
+dao2022flash:
+  authors: "Dao, Tri, et al."
+  year: 2022
+  title: "Flashattention: Fast and memory-efficient exact attention with io-awareness"
+  journal: "Advances in Neural Information Processing Systems"
+  volume: 35
+  pages: "16344-16359"
+  url: "https://arxiv.org/abs/2205.14135"
+
+vllm:
+  authors: "VLLM"
+  year: 2023
+  title: "VLLM: A High-Performance Inference Engine for LLMs"
+  journal: "Blog"
+  url: "https://blog.vllm.ai/2023/06/20/vllm.html"
+
+vertex2024lora:
+  authors: "Google Cloud"
+  year: 2024
+  title: "LoRA and QLoRA"
+  journal: "Vertex AI Generative AI"
+  url: "https://cloud.google.com/vertex-ai/generative-ai/docs/model-garden/lora-qlora"
+
+
+langchain2024:
+  authors: "Langchain"
+  year: 2024
+  title: "Langchain Tutorials"
+  journal: "Langchain Documentation"
+  url: "https://python.langchain.com/docs/tutorials/"
+

@@ -107,7 +107,7 @@ There is an open source project called [llm-memory](https://llm-system-requireme
 
 ## References
 
-{% include references.html keys="nvidia2023mastering,escobar2023memory, huggingface2024memory" %}
+{% include references.html keys="nvidia2023mastering,escobar2023memory,huggingface2024memory" %}
 
 
 
