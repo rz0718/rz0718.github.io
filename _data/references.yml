@@ -97,3 +97,25 @@ langchain2024:
   journal: "Langchain Documentation"
   url: "https://python.langchain.com/docs/tutorials/"
 
+kaplan2020scaling:
+  authors: "Kaplan, Jared, et al."
+  year: 2020
+  title: "Scaling laws for neural language models"
+  journal: "arXiv preprint arXiv:2001.08361"
+  url: "https://arxiv.org/abs/2001.08361"
+
+
+hoffmann2022compute:
+  authors: "Hoffmann, Jordan, et al."
+  year: 2022
+  title: "Training compute-optimal large language models"
+  journal: "arXiv preprint arXiv:2203.15556"
+  url: "https://arxiv.org/abs/2203.15556"
+
+achiama2023gpt4:
+  authors: "Achiam, Josh, et al."
+  year: 2023
+  title: "GPT-4 technical report"
+  journal: "arXiv preprint arXiv:2303.08774"
+  url: "https://arxiv.org/abs/2303.08774"
+

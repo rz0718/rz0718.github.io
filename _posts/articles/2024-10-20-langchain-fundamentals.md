@@ -11,7 +11,7 @@ excerpt: "A fundamental view of LangChain"
 
 LangChain is a OSS framework for building applications with language models. In this blog, I will provide a fundamental view of LangChain and its components. Firstly, we will look at the benefits of LangChain. Then, we will go through the conceptual design of LangChain. Than, we will check the basic components of LangChain. It would be a series of blogs. Here, we will only cover runnables, chatmodel, prompt, message. In the next blogs, we will cover the tool, retriever, outputparser, and finally, we will check the LangGraph.
 
-### What is LangChain?
+## What is LangChain?
 
 LangChain is designed to simplify the process of building applications with language models. Now, they are expanding their scope to cover the whole lifecycle of LLM applications by providing a set of building blocks. It has multiple modules with different focuses as follows:
 
@@ -77,9 +77,9 @@ print(result_hf.content)
 There is a detailed documentation on LangChain available on their official site [here](https://python.langchain.com/docs/tutorials/) . In this blog, I will only cover high-level and important components and concepts which can help you to understand the LangChain framework and start building applications using LangChain quickly. Here, langchain-core would be covered mainly. in the next blog, I will focus more on LangGraph.
 
 
-### Basic Components
+## Basic Components
 
-#### Runnables:
+### Runnables:
 LangChain's core abstraction is the Runnable interface, which provides a standard way to compose and execute language model chains. Via LCEL, runnables can be chained together using operators like  (pipe) and + (combine), allowing you to build complex workflows from simple components. They support batch processing, streaming, async execution and other advanced features. 
 
 The Runnable interface provides five key capabilities:
@@ -105,7 +105,7 @@ The major types of predefined runnables are as follows:
 
 If you see in the above code snippes, we are using the prompt and chatmodel runnables. And the pipe operator is used to chain them together. In the following, we will check those componets in more details, which is also the basic building blocks of LangChain.
 
-#### ChatModel & LLM:
+### ChatModel & LLM:
 
 ChatModel is a wrapper around an LLM which provide a standardized way to interact with modern LLMs through a message-based interface. The legacy LLM is also supported in LangChain to support the simple text-in-text-out interactions (via string).  Instead of simple text-in-text-out interactions, they work with structured messages that have specific roles (like "system", "human", or "assistant") and can contain various types of content. It is more and more common to use ChatModel for development. And even in OpenAI's API, chat model is now the chosen way to interact with modern models. 
 
@@ -166,7 +166,7 @@ The key features of ChatModel are summarized as below:
    - Built-in monitoring and debugging through LangSmith
    - ChatModel with its supported features could be found [here](https://python.langchain.com/docs/integrations/chat/)
 
-#### Prompt & Message:
+### Prompt & Message:
 
 As mentioned in the previous section, messages are the fundamental units of communication in chat models. They represent individual pieces of a conversation and have specific roles and content. While prompts are templates that help structure how we format inputs before sending them to language models. They act as a higher-level abstraction above messages.
 
@@ -254,17 +254,6 @@ final_prompt = ChatPromptTemplate(
 chain = final_prompt | llm
 chain.invoke({"input": "what is 4~4?"})
 ```
-
-#### OutputParser:
-
-https://medium.com/@juanc.olamendy/parsing-llm-structured-outputs-in-langchain-a-comprehensive-guide-f05ffa88261f
-
-
-#### Tool:
-
-#### Retriever:
-
-## Discussions
 
 ## References
 

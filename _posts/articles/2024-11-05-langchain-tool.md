@@ -165,5 +165,3 @@ The above basic flow is actually the built in those tool calling agents defined 
 ## References
 
 {% include references.html keys="langchain2024" %}
-
-https://deepinfra.com/blog/langchain-tool-search
