@@ -6,7 +6,7 @@ author_profile: true
 
 ## About Me
 
-Currently, I work in a fintech company, where I lead teams working on machine learning applications in finance. And also I do some work related to tresaury and capital markets.
+Currently, I work in a fintech company, where I lead teams working on machine learning applications in finance. And also I do some work related to treasury and capital markets.
 
 I am also passionate about teaching and currently delivering courses in machine learning and data science.
 
