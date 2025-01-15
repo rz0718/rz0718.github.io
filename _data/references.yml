@@ -119,3 +119,38 @@ achiama2023gpt4:
   journal: "arXiv preprint arXiv:2303.08774"
   url: "https://arxiv.org/abs/2303.08774"
 
+anthropic2024building:
+  authors: "Askell, A., Bai, Y., Chen, A., Chan, D., DasSarma, N., Drain, D., ... & Kaplan, J."
+  year: 2024
+  title: "Building Effective Agents Through Human Feedback and AI Training"
+  journal: "Anthropic Research"
+  url: "https://www.anthropic.com/research/building-effective-agents"
+
+lilianweng2023agent:
+  authors: "Lilian Weng"
+  year: 2023
+  title: "Agentic AI"
+  journal: "Lilian Weng's Blog"
+  url: "https://lilianweng.github.io/posts/2023-06-23-agent/"
+
+huyenchip2025agent:
+  authors: "Huyen Chip"
+  year: 2025
+  title: "Agents"
+  journal: "Huyen Chip's Blog"
+  url: "https://huyenchip.com/2025/01/07/agents.html"
+
+
+yao2022react:
+  authors: "Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K., & Cao, Y."
+  year: 2022
+  title: "React: Synergizing reasoning and acting in language models"
+  journal: "arXiv preprint arXiv:2210.03629"
+  url: "https://arxiv.org/abs/2210.03629"
+
+langchain2024planning:
+  authors: "Langchain"
+  year: 2024
+  title: "Planning Agents"
+  journal: "Langchain Blog"
+  url: "https://blog.langchain.dev/planning-agents/"
