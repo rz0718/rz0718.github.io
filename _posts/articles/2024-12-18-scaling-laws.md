@@ -88,7 +88,7 @@ From these two papers, the quick takeaways could be summarized as follow:
 
 Than, in the recent years, the Hoffmann's study is more popular and widely used. We can also understand this by the fact that this study is more practical in terms of the inference cost.
 
-## The GPT Journey: Proof of Scaling Laws 
+### The GPT Journey: Proof of Scaling Laws 
 
 It is the age of pretraining. In OpenAI and other foundation models, we can see the journey to push the model performances is just train increasingly large models on bigger and higher quality datasets. For example, the creation of OpenAI's GPT lineage of models is a testament to the scaling laws. This is exactly what happened with GPT-1, GPT-2, GPT-3, and GPT-4.
 
@@ -144,12 +144,14 @@ If it is not scaling laws, what is the future? The following figure is the answe
 Yes, those are also hot topics now in the LLM community including agents and reasoning models. We will discuss those topics in the coming blogs.
 
 Before the end, we can also quickly disucss one term called FLOPs, which is heavily used in the research of scaling laws.
-### What is FLOPs?
- It would be better to understand the concept of FLOPs. FLOPs is a measure of the number of floating-point operations required to perform a computation. For example, OpenAI mentioned that it took about 6 FLOP (floating-point operations) per parameter per token to train GPT-4. In terms of LLM's training, forward and backward passes are all captured by FLOPs. The rule of thumb is that the compute required to train a model is around *6PN* FLOPs, where P is the model size and N is the dataset size. And *2PN* can capture the forward pass while *4PN* can capture the backward pass. The accurate modelling of FLOPs could be found in this [blog](https://medium.com/@dzmitrybahdanau/the-flops-calculus-of-language-model-training-3b19c1f025e4).
-
-Than, in the scaling law, the compute budget is always defined as values in PetaFLOP-days, or $10^15$ FLOPs/second x 24 hours x 3600 seconds/hour, arriving at $8.64*\multiply*10^19$ FLOPs.
 
 ## References
 
 {% include references.html keys="kaplan2020scaling,hoffmann2022compute,achiama2023gpt4" %}
 
+## Appendix
+
+### What is FLOPs?
+ It would be better to understand the concept of FLOPs. FLOPs is a measure of the number of floating-point operations required to perform a computation. For example, OpenAI mentioned that it took about 6 FLOP (floating-point operations) per parameter per token to train GPT-4. In terms of LLM's training, forward and backward passes are all captured by FLOPs. The rule of thumb is that the compute required to train a model is around *6PN* FLOPs, where P is the model size and N is the dataset size. And *2PN* can capture the forward pass while *4PN* can capture the backward pass. The accurate modelling of FLOPs could be found in this [blog](https://medium.com/@dzmitrybahdanau/the-flops-calculus-of-language-model-training-3b19c1f025e4).
+
+Than, in the scaling law, the compute budget is always defined as values in PetaFLOP-days, or $10^15$ FLOPs/second x 24 hours x 3600 seconds/hour, arriving at $8.64*\multiply*10^19$ FLOPs.

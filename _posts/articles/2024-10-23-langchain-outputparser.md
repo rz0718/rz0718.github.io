@@ -13,7 +13,7 @@ Having a model returning output that matches a specific schema is useful for man
 In LangChain, we have two main approaches to parse structured outputs. In this blog, we will cover them in details.
 
 
-### Implementing with `with_structured_output`
+## Implementing with `with_structured_output`
 
 This approach only works with models that provide native APIs for structured outputs like tool calling or JSON mode. The list could be found [here](https://python.langchain.com/docs/integrations/chat/).
 
@@ -69,7 +69,7 @@ This method takes a schema as input which specifies the names, types, and descri
 
 As we mentioned, the `with_structured_output` method only works with models that provide native APIs for structured outputs. If you want to use it with other models, we should directly prompt the model to use a specific schema and use the output parser to parse the structuredoutput from the raw output. The following two approaches both belong to this category.
 
-### Implementing with `OutputParser`
+## Implementing with `OutputParser`
 
 OutputParser  are classes that help to parse raw outputs from the LLM. The most common one is `PydanticOutputParser` which is used to parse the output from the LLM into a Pydantic object. In LangChain, for each output parser, there are two main methods:
 
@@ -143,7 +143,7 @@ The results are given below:
 
 The `model_dump()` method is used to convert the Pydantic object into a dictionary.
 
-### Best Practices with Structured Outputs
+## Best Practices with Structured Outputs
 
 1. Design clear and concise schema: clear and concise schema is important for the model to understand the output and for the parser to parse the output. We should consider all possible fields and their types.
 2. Use descriptive and specific field names: field names should be self-explanatory and consistent with your application’s naming conventions.

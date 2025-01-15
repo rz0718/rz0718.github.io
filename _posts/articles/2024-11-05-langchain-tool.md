@@ -28,7 +28,7 @@ model_with_tools = model.bind_tools(tools)
 # Tool calling 
 response = model_with_tools.invoke(user_input)
 ```
-### 1. Tool 
+## Tool 
 
 Tools are a way to wrap a function and its schema in a way that can be passed to a ChatModel. The interface of a tool is as follows:
 
@@ -67,7 +67,7 @@ Some best practices to design a tool are as follows:
 * Use chat models that support tool-calling APIs
 * Asking the model to select from a large list of tools poses challenges for the model.
 
-### 2. Tool Binding
+### Tool Binding
 
 LangChain has a method `bind_tools` to bind a tool to a model. The method is as follows: 
 
@@ -75,7 +75,7 @@ LangChain has a method `bind_tools` to bind a tool to a model. The method is as 
 model_with_tools = model.bind_tools([multiply])
 ```
 
-### 3. Tool Calling
+### Tool Calling
 
 In the tool calling process, the model will take two kidns of inputs: 
 1. Users' query 
@@ -112,7 +112,7 @@ It has the following fields:
 * `id`: The ID of the tool call.
 * `type`: tool_call
 
-### 4. Tool Execution
+### Tool Execution
 
 Tools could be exeucted via the `invoke` method by taking the tool call as the input. 
 
@@ -159,9 +159,38 @@ AIMessage(content='3 times 5 is 15.', additional_kwargs={'refusal': None}, respo
 The above basic flow is actually the built in those tool calling agents defined in LangChain and LangGraph.
 
 
-### 5. Building a tool calling agent
+## Building a tool calling agent
 
+If we use the LangChain, we will mainly use their two built-in tool calling agents: `create_tool_calling_agent` and `AgentExecutor`. The first one is to create agent with the tools and the second one is wrapping the agent to stream messages. It means the first one is to create the agent and it would output the tool calling information however the tool can not be executed. The second one is to connect all components together. The tool is executed and the output is passed back to the LLM and the LLM would generate the final response.
 
+The dummy code is as follows:
+
+```python
+# define tool1 and tool2
+tools = [tool1, tool2]
+from langchain import hub
+
+# Get the prompt to use - you can modify this!
+prompt = hub.pull("hwchase17/openai-functions-agent")
+prompt.messages
+
+from langchain.agents import create_tool_calling_agent
+
+agent = create_tool_calling_agent(model, tools, prompt)
+# Use the agent
+from langchain.agents import AgentExecutor
+
+agent_executor = AgentExecutor(agent=agent, tools=tools)
+agent_executor.invoke({"input": "hi!"})
+```
+
+The prompt imported above is a built-in prompt for the tool calling agent as follows: 
+```
+[SystemMessagePromptTemplate(prompt=PromptTemplate(input_variables=[], input_types={}, partial_variables={}, template='You are a helpful assistant'), additional_kwargs={}),
+ MessagesPlaceholder(variable_name='chat_history', optional=True),
+ HumanMessagePromptTemplate(prompt=PromptTemplate(input_variables=['input'], input_types={}, partial_variables={}, template='{input}'), additional_kwargs={}),
+ MessagesPlaceholder(variable_name='agent_scratchpad')]
+```
 ## References
 
 {% include references.html keys="langchain2024" %}

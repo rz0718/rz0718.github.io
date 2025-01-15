@@ -11,6 +11,17 @@ markdown: kramdown
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "air"
 
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..3
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
 # Sass/SCSS
 sass:
   sass_dir: _sass
@@ -38,17 +49,48 @@ author:
 
 # Defaults
 defaults:
-  # _posts
+  # _posts/articles
   - scope:
-      path: ""
+      path: "_posts/articles"
       type: posts
     values:
       layout: single
       author_profile: true
-      show_date: true
       read_time: true
+      comments: true
       share: true
       related: true
+      toc: true
+      toc_sticky: true
+      toc_label: "Table of Contents"
+  
+  # _posts/notes
+  - scope:
+      path: "_posts/notes"
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      toc: false
+      toc_sticky: false
+  
+  # _posts/blogs
+  - scope:
+      path: "_posts/blogs"
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      toc: false
+      toc_sticky: false
   # _pages
   - scope:
       path: "_pages"
