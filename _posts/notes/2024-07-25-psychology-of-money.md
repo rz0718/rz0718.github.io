@@ -33,6 +33,7 @@ Ok, to summary, this book is trying to tell us the right attitude towards money 
 1. Buy & hold
 2. Diversify the risk and be humble toward the markets
 3. Save money and invest it
+4. The importance of maintaining good health and ensuring adequate rest, pivotal for long-term success and well-being
 
 And there is also one youtube video (in Chinese) which explain the investment mindset very well: [ 投资第一课](https://www.youtube.com/watch?v=hCi3x5CX9tk)
 
