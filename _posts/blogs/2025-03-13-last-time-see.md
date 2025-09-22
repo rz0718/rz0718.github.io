@@ -1,10 +1,12 @@
 ---
 title: "上一次看"
+date: 2025-03-13
 categories:
-  - blog
+  - blogs
 tags:
   - music
 excerpt: "谢谢你方大同"
+permalink: /blogs/2025/03/13/last-time-see/
 ---
 
 这周重新了看了一遍HOPICO对于方大同的新专辑的专访：真假方大同。后知后觉发现，我再也不能去现场看方大同的live，就像失去了一个很重要的好朋友。既然睡不着，就随便写点什么。

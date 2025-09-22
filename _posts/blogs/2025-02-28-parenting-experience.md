@@ -1,10 +1,12 @@
 ---
 title: "全职带娃心得"
+date: 2025-02-28
 categories:
   - blogs
 tags:
   - family
 excerpt: "全职带娃一周记"
+permalink: /blogs/2025/02/28/parenting-experience/
 ---
 
 今天是周五，因为是recess week, 突然有个晚上不用上课，可以记录下过去一段时间带娃的心得，尤其是月嫂下户那周，全职带娃的心得和体会。总结就是娃是真可爱，但是真废她爸妈。

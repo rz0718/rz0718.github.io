@@ -1,5 +1,6 @@
 ---
 title: "Reflections on Teaching Machine Learning"
+date: 2024-06-01
 categories:
   - blogs
 tags:
@@ -7,6 +8,7 @@ tags:
   - machine learning
   - education
 excerpt: "Personal reflections and lessons learned from teaching machine learning at NUS."
+permalink: /blogs/2024/06/01/teaching-ml/
 ---
 
 Teaching machine learning at the National University of Singapore has been one of the most rewarding experiences in my career. Here are some reflections on what I've learned and how it has shaped my own understanding of the field.

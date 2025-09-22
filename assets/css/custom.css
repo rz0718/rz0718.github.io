@@ -1,0 +1,102 @@
+/* Custom CSS to override theme font sizes */
+
+/* Reset base font size */
+html {
+    font-size: 14px !important;
+}
+
+/* Body and general text */
+body {
+    font-size: 0.875rem !important;
+    line-height: 1.5 !important;
+}
+
+/* Page content */
+.page__content p,
+.page__content li,
+.page__content dl {
+    font-size: 0.875rem !important;
+    line-height: 1.6 !important;
+}
+
+/* Main headings */
+.page__title {
+    font-size: 1.5rem !important;
+    line-height: 1.2 !important;
+}
+
+/* Content headings */
+.page__content h1 {
+    font-size: 1.4rem !important;
+}
+
+.page__content h2 {
+    font-size: 1.2rem !important;
+}
+
+.page__content h3 {
+    font-size: 1.1rem !important;
+}
+
+.page__content h4 {
+    font-size: 1rem !important;
+}
+
+.page__content h5 {
+    font-size: 0.95rem !important;
+}
+
+.page__content h6 {
+    font-size: 0.9rem !important;
+}
+
+/* Archive pages */
+.archive__item-title {
+    font-size: 1.1rem !important;
+}
+
+.archive__item-excerpt {
+    font-size: 0.875rem !important;
+}
+
+/* Navigation */
+.greedy-nav a {
+    font-size: 0.875rem !important;
+}
+
+/* Sidebar */
+.sidebar {
+    font-size: 0.875rem !important;
+}
+
+.sidebar__right {
+    font-size: 0.875rem !important;
+}
+
+/* Author bio */
+.author__bio {
+    font-size: 0.875rem !important;
+}
+
+/* TOC */
+.toc {
+    font-size: 0.875rem !important;
+}
+
+.toc__title {
+    font-size: 0.95rem !important;
+}
+
+/* Reduce meta text */
+.page__meta {
+    font-size: 0.75rem !important;
+}
+
+/* Code blocks */
+pre {
+    font-size: 0.8rem !important;
+}
+
+code {
+    font-size: 0.85rem !important;
+}
