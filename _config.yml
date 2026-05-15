@@ -29,7 +29,7 @@ sass:
 
 # Site Author
 author:
-  name: "Rui Zhao(赵锐)"
+  name: "Rui Zhao"
   avatar: "/assets/images/bio-photo.jpg"
   bio: "茫茫宇宙，好像荒野"
   location: "Singapore"
@@ -89,8 +89,9 @@ defaults:
       comments: true
       share: true
       related: true
-      toc: false
+      toc: true
       toc_sticky: false
+      toc_label: "Table of Contents"
   # _pages
   - scope:
       path: "_pages"
@@ -121,4 +122,4 @@ exclude:
   - Gemfile.lock
   - vendor
   - _templates
-  - README.md 
+  - README.md

@@ -41,7 +41,7 @@ The `_templates` directory contains templates for different types of content:
      - Use photos to enhance storytelling
      - Share genuine reflections
 
-3. **Book Notes** (`book-note.md`):
+3. **Book Notes** (`template-book-note.md`):
    - Use for: Book summaries, reading reflections
    - File naming: `YYYY-MM-DD-book-title.md`
    - Location: `_posts/notes/`
@@ -56,24 +56,56 @@ The `_templates` directory contains templates for different types of content:
 
 ### Creating New Content
 
-1. **Choose Template**:
+1. **Choose the correct content type and folder**:
+
+   | Content type | Folder | Template | Category front matter | Listing page |
+   | --- | --- | --- | --- | --- |
+   | Article | `_posts/articles/` | `_templates/article-template.md` | `categories: [articles]` | `/articles/` |
+   | Blog | `_posts/blogs/` | `_templates/blog-template.md` | `categories: [blogs]` | `/blogs/` |
+   | Note | `_posts/notes/` | `_templates/template-book-note.md` | `categories: [notes]` | `/notes/` |
+
+2. **Create the post file**:
+
    ```bash
-   cp _templates/[template-name].md _posts/[category]/YYYY-MM-DD-title.md
+   # Article
+   cp _templates/article-template.md _posts/articles/YYYY-MM-DD-title.md
+
+   # Blog
+   cp _templates/blog-template.md _posts/blogs/YYYY-MM-DD-title.md
+
+   # Note
+   cp _templates/template-book-note.md _posts/notes/YYYY-MM-DD-title.md
    ```
 
-2. **Edit Front Matter**:
+   Use the date you want Jekyll to publish under. The filename must start with `YYYY-MM-DD-`.
+
+3. **Edit Front Matter**:
+
    ```yaml
    ---
    title: "Your Title"
    categories:
-     - [articles/blogs/notes]
+     - articles
    tags:
      - relevant-tag
    excerpt: "Brief description"
    ---
    ```
 
-3. **Add Images**:
+   Keep the category aligned with the folder:
+   - Posts in `_posts/articles/` should use `categories: [articles]`
+   - Posts in `_posts/blogs/` should use `categories: [blogs]`
+   - Posts in `_posts/notes/` should use `categories: [notes]`
+
+   Current site defaults in `_config.yml`:
+   - Articles and blogs show a foldable table of contents.
+   - Notes do not show a table of contents by default.
+   - Posts use the `single` layout, read time, comments, sharing, and related posts by default.
+   - Category index pages (`/articles/`, `/notes/`, `/blogs/`) intentionally do not show the author sidebar.
+   - The home page shows the author sidebar and lists the 10 most recent posts.
+
+4. **Add Images**:
+
    - Place in correct directory:
      ```
      assets/images/
@@ -84,11 +116,41 @@ The `_templates` directory contains templates for different types of content:
    - Optimize before uploading
    - Use meaningful names
 
-4. **Format Content**:
+5. **Format Content**:
+
    - Follow template structure
    - Add/remove sections as needed
    - Include relevant images
    - Add proper citations/references
+
+6. **Preview locally**:
+
+   ```bash
+   bundle exec jekyll serve
+   ```
+
+   Visit `http://localhost:4000`. If port 4000 is already in use, run:
+
+   ```bash
+   bundle exec jekyll serve --port 4001
+   ```
+
+7. **Publish**:
+
+   Commit and push the new or edited post, images, and any metadata changes. GitHub Pages deploys the site from the main branch.
+
+### Updating Existing Content
+
+To update an existing article, blog, or note:
+
+1. Edit the Markdown file in the correct folder:
+   - `_posts/articles/`
+   - `_posts/blogs/`
+   - `_posts/notes/`
+2. Keep the existing filename date unless you intentionally want to change the post date and URL.
+3. Keep the `categories` value consistent with its folder.
+4. Add any new images under the matching `assets/images/...` folder.
+5. Run `bundle exec jekyll build` or `bundle exec jekyll serve` before pushing.
 
 ### Image Usage
 

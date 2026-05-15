@@ -1,102 +1,279 @@
 /* Custom CSS to override theme font sizes */
 
+@font-face {
+    font-family: "Jason Handwriting 2";
+    src: url("https://cdn.jsdelivr.net/gh/max32002/JasonHandWritingFonts@main/webfont/JasonHandwriting2-Regular.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/max32002/JasonHandWritingFonts@main/webfont/JasonHandwriting2-Regular.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "LXGW Neo ZhiSong";
+    src: url("https://github.com/lxgw/LxgwNeoZhiSong/releases/download/v1.063/LXGWNeoZhiSong.ttf") format("truetype");
+    font-display: swap;
+}
+
 /* Reset base font size */
 html {
-    font-size: 14px !important;
+    font-size: 16px !important;
+    background: #fff !important;
 }
 
 /* Body and general text */
 body {
-    font-size: 0.875rem !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+    font-size: 16px !important;
     line-height: 1.5 !important;
+    color: rgb(31, 31, 31) !important;
+    background: #fff !important;
+}
+
+.masthead,
+.greedy-nav,
+.greedy-nav .visible-links,
+.greedy-nav .hidden-links {
+    background: #fff !important;
+}
+
+.layout--single:not(.wide) #main {
+    max-width: 768px !important;
+    padding: 24px !important;
+}
+
+.layout--single:not(.wide) .sidebar {
+    display: none !important;
+}
+
+.layout--single:not(.wide) .page {
+    float: none !important;
+    width: 100% !important;
+    padding: 0 !important;
+}
+
+.layout--single:not(.wide) .page__inner-wrap,
+.layout--single:not(.wide) .page__content,
+.layout--single:not(.wide) .page__meta,
+.layout--single:not(.wide) .page__share {
+    float: none !important;
+    width: 100% !important;
 }
 
 /* Page content */
 .page__content p,
 .page__content li,
 .page__content dl {
-    font-size: 0.875rem !important;
+    font-size: 16px !important;
     line-height: 1.6 !important;
+    color: rgb(31, 31, 31) !important;
 }
 
 /* Main headings */
 .page__title {
-    font-size: 1.5rem !important;
+    font-size: 36px !important;
     line-height: 1.2 !important;
 }
 
 /* Content headings */
 .page__content h1 {
-    font-size: 1.4rem !important;
+    font-size: 28px !important;
 }
 
 .page__content h2 {
-    font-size: 1.2rem !important;
+    font-size: 24px !important;
 }
 
 .page__content h3 {
-    font-size: 1.1rem !important;
+    font-size: 18px !important;
 }
 
 .page__content h4 {
-    font-size: 1rem !important;
+    font-size: 16px !important;
 }
 
 .page__content h5 {
-    font-size: 0.95rem !important;
+    font-size: 14px !important;
 }
 
 .page__content h6 {
-    font-size: 0.9rem !important;
+    font-size: 12px !important;
 }
 
 /* Archive pages */
 .archive__item-title {
-    font-size: 1.1rem !important;
+    font-size: 24px !important;
 }
 
 .archive__item-excerpt {
-    font-size: 0.875rem !important;
+    font-size: 14px !important;
 }
 
 /* Navigation */
 .greedy-nav a {
-    font-size: 0.875rem !important;
+    font-size: 16px !important;
 }
 
 /* Sidebar */
 .sidebar {
-    font-size: 0.875rem !important;
+    font-size: 14px !important;
 }
 
 .sidebar__right {
-    font-size: 0.875rem !important;
+    font-size: 14px !important;
 }
 
 /* Author bio */
 .author__bio {
-    font-size: 0.875rem !important;
+    font-size: 14px !important;
+}
+
+.sidebar .author__avatar {
+    display: block !important;
+    width: 120px !important;
+    height: 120px !important;
+    margin: 0 auto 14px !important;
+}
+
+.sidebar .author__avatar img {
+    width: 120px !important;
+    height: 120px !important;
+    object-fit: cover !important;
+    border-radius: 0 !important;
+}
+
+.sidebar .author__content {
+    text-align: center !important;
+}
+
+.sidebar .author__name {
+    color: #315f65 !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    line-height: 1.1 !important;
+}
+
+.sidebar .author__name::after {
+    content: "赵锐";
+    display: block;
+    margin-top: 8px;
+    font-family: "Jason Handwriting 2", "Kaiti SC", "STKaiti", serif;
+    color: #315f65;
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+}
+
+.sidebar .author__bio {
+    margin-top: 10px !important;
+    font-family: "LXGW Neo ZhiSong", "Songti SC", "STSong", serif !important;
+    font-size: 14px !important;
+    font-style: italic !important;
+    line-height: 1.5 !important;
 }
 
 /* TOC */
 .toc {
-    font-size: 0.875rem !important;
+    font-size: 15px !important;
 }
 
 .toc__title {
-    font-size: 0.95rem !important;
+    font-size: 16px !important;
 }
 
 /* Reduce meta text */
 .page__meta {
-    font-size: 0.75rem !important;
+    font-size: 14px !important;
 }
 
 /* Code blocks */
 pre {
-    font-size: 0.8rem !important;
+    font-size: 14px !important;
 }
 
 code {
-    font-size: 0.85rem !important;
+    font-size: 0.78em !important;
+}
+
+.post-toc {
+    width: 100% !important;
+    margin: 0 2px 40px !important;
+    padding: 0 !important;
+    color: rgb(31, 31, 31) !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.post-toc details {
+    display: block !important;
+}
+
+.post-toc summary {
+    cursor: zoom-in !important;
+    margin: 0 !important;
+    padding: 8px 16px !important;
+    color: rgb(31, 31, 31) !important;
+    background: #f5f5f5 !important;
+    border: 1px solid #e5e5e5 !important;
+    border-radius: 6px !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+}
+
+.post-toc details[open] summary {
+    cursor: zoom-out !important;
+    margin-bottom: 12px !important;
+    background: transparent !important;
+    border-color: transparent !important;
+}
+
+.post-toc .details {
+    display: inline !important;
+    font-weight: 500 !important;
+}
+
+.post-toc .inner {
+    margin: 0 20px !important;
+    padding: 0 20px 10px !important;
+}
+
+.post-toc .toc__menu {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.post-toc .toc__menu,
+.post-toc .toc__menu ul {
+    list-style: disc !important;
+}
+
+.post-toc .toc__menu ul {
+    margin-left: 20px !important;
+    padding-left: 20px !important;
+}
+
+.post-toc li,
+.post-toc .toc__menu li {
+    display: list-item !important;
+    margin: 5px 0 0 !important;
+    padding: 0 !important;
+    line-height: 1.6 !important;
+    list-style: disc !important;
+    border: 0 !important;
+    background: transparent !important;
+}
+
+.post-toc a {
+    display: inline !important;
+    padding: 0 !important;
+    color: rgb(31, 31, 31) !important;
+    text-decoration: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    font-weight: 400 !important;
 }

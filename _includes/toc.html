@@ -117,6 +117,8 @@ endcapture %}
         {% capture jekyll_toc %}{{ jekyll_toc }}</li>
         </{{ listModifier }}>{% endcapture %}
         {% endfor %}
+        {% capture jekyll_toc %}{{ jekyll_toc }}</li>
+        </{{ listModifier }}>{% endcapture %}
 
         {% if jekyll_toc != '' %}
         {% assign rootAttributes = '' %}
@@ -130,7 +132,7 @@ endcapture %}
 
         {% if rootAttributes %}
         {% assign nodes = jekyll_toc | split: '>' %}
-        {% capture jekyll_toc %}<{{ listModifier }}{{ rootAttributes }}>{{ nodes | shift | join: '>' }}{% endcapture %}
+        {% capture jekyll_toc %}<{{ listModifier }}{{ rootAttributes }}>{{ nodes | shift | join: '>' }}>{% endcapture %}
             {% endif %}
             {% endif %}
             {% endcapture %}{% assign tocWorkspace = '' %}{{ deprecation_warnings }}{{ jekyll_toc }}

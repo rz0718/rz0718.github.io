@@ -3,7 +3,7 @@ title: "Notes"
 layout: category
 permalink: /notes/
 taxonomy: notes
-author_profile: true
+author_profile: false
 ---
 
-A collection of reading notes and thoughts on books, papers, and other materials. These notes cover various topics including technology, finance, psychology, and personal development. 
+A collection of reading notes and thoughts on books, papers, and other materials. These notes cover various topics including technology, finance, psychology, and personal development.

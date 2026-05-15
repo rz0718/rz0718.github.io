@@ -34,21 +34,20 @@ layout: default
             </header>
             {% endunless %}
 
+            {% if page.toc %}
+            <nav class="toc post-toc" aria-label="{{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: 'Contents' }}">
+                <details>
+                    <summary>
+                        <span class="details">{{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "Contents" }}</span>
+                    </summary>
+                    <div class="inner">
+                        {% include toc.html sanitize=true html=content h_min=1 h_max=3 class="toc__menu" %}
+                    </div>
+                </details>
+            </nav>
+            {% endif %}
+
             <section class="page__content e-content" itemprop="text">
-                {% if page.toc %}
-                <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
-                    <nav class="toc">
-                        <header>
-                            <h4 class="nav__title">
-                                <i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i>
-                                {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default:
-                                "Contents" }}
-                            </h4>
-                        </header>
-                        {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" %}
-                    </nav>
-                </aside>
-                {% endif %}
                 {{ content }}
                 {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{
                         site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}

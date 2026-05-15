@@ -8,7 +8,7 @@ Here, I read, build, think and also record.
 
 ## Recent Posts
 
-{% for post in site.posts limit:6 %}
+{% for post in site.posts limit:10 %}
   <article class="archive__item">
     <h3 class="archive__item-title">
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
