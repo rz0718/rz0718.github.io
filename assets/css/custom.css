@@ -1,9 +1,8 @@
 /* Custom CSS to override theme font sizes */
 
 @font-face {
-    font-family: "Jason Handwriting 2";
-    src: url("https://cdn.jsdelivr.net/gh/max32002/JasonHandWritingFonts@main/webfont/JasonHandwriting2-Regular.woff2") format("woff2"),
-        url("https://cdn.jsdelivr.net/gh/max32002/JasonHandWritingFonts@main/webfont/JasonHandwriting2-Regular.woff") format("woff");
+    font-family: "Qiantu Bifeng Handwriting";
+    src: url("https://cdn.jsdelivr.net/gh/lingyunvoid/font@main/%E5%8D%83%E5%9B%BE%E7%AC%94%E9%94%8B%E6%89%8B%E5%86%99%E4%BD%93.ttf") format("truetype");
     font-display: swap;
 }
 
@@ -155,7 +154,7 @@ body {
     content: "赵锐";
     display: block;
     margin-top: 8px;
-    font-family: "Jason Handwriting 2", "Kaiti SC", "STKaiti", serif;
+    font-family: "Qiantu Bifeng Handwriting", "Kaiti SC", "STKaiti", serif;
     color: #315f65;
     font-size: 34px;
     font-weight: 400;
