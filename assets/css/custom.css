@@ -406,6 +406,7 @@ code {
     display: list-item !important;
     margin: 5px 0 0 !important;
     padding: 0 !important;
+    font-size: 15px !important;
     line-height: 1.6 !important;
     list-style: disc !important;
     border: 0 !important;
@@ -421,4 +422,5 @@ code {
     box-shadow: none !important;
     background: transparent !important;
     font-weight: 400 !important;
+    font-size: 15px !important;
 }
