@@ -19,6 +19,18 @@ This article is not about "how AI writes code". It is about a different question
 
 The key part is not the model itself. The key part is the harness around the model: cron, permissions, MCP servers, secret management, logs, skills, cost control, and failure debugging. Once the task becomes a scheduled workflow, all of these details become production issues.
 
+## Why Not Use Claude Code Routines?
+
+Claude Code routines would be a reasonable option if the goal were to stay fully inside the Claude Code or Anthropic workflow. I used a local cron-based harness because the requirement was broader: keep the workflow portable, keep secrets and execution control local, and operate the pipeline like normal infrastructure.
+
+The workflow is intentionally built around generic pieces: shell script, env file, MCP servers, logs, cron, and a skill prompt. Claude Code is the current agent runtime, but the scheduler does not depend on it. Later, the pieces can be swapped: Claude Code for another agent CLI, DeepSeek for another model, OpenRouter for a direct provider, or cron for systemd timer, Airflow, GitHub Actions, or Kubernetes CronJob.
+
+The second reason is control. The job runs on a VM under a dedicated Unix user, with local env files, file permissions, logs, and explicit allow and deny rules. For an ops workflow touching chat systems, alerting tools, data warehouses, and knowledge bases, that boundary is easier to audit than a product-level scheduler abstraction.
+
+Cron is boring, but that is the point. It gives predictable execution, normal logs, normal exit codes, easy reruns, and compatibility with existing infrastructure practices. The agent handles the judgment-heavy part; scheduling, permissions, logging, and failure handling stay in conventional infrastructure.
+
+For a personal Claude-native automation, I would consider routines. For this production-style report, the infrastructure boundary was more important than convenience.
+
 ## Why Use Claude Code as a Harness?
 
 The traditional way to build this kind of workflow is a Python pipeline:
